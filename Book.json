@@ -1,0 +1,101 @@
+[
+  {
+    "bookDetailRule" : {
+      "authorXpath" : "substring-after(\/\/*[@id=\"info\"]\/p[1], \"：\")",
+      "chapterListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/*[@id=\"list\"]\/dl\/dd"
+      },
+      "updatedAtXpath" : "substring-after(\/\/*[@id=\"info\"]\/p[3], \"最后更新：\")",
+      "coverXpath" : "\/\/*[@id=\"fmimg\"]\/img\/@src",
+      "introXpath" : "\/\/*[@id=\"intro\"]\/p",
+      "nameXpath" : "\/\/*[@id=\"info\"]\/h1",
+      "categoryXpath" : "\/\/div[@class=\"con_top\"]\/a[2]"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "groupTitleFixed" : "分类推荐",
+          "authorXpath" : "dl\/dt\/span",
+          "coverXpath" : "div[1]\/a\/img\/@src",
+          "listXpath" : "\/\/*[@id=\"hotcontent\"]\/\/div[@class=\"item\"]",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "groupTitleFixed" : "最近更新列表",
+          "authorXpath" : "span[3]",
+          "updatedAtXpath" : "substring-before(substring-after(span[2]\/text(), \"(\"), \")\")",
+          "listXpath" : "\/\/*[@id=\"newscontent\"]\/div[1]\/ul\/li",
+          "urlXpath" : "span[1]\/a\/@href",
+          "lastChapterXpath" : "span[2]\/a",
+          "nameXpath" : "span[1]\/a"
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/div[@class=\"nav\"]\/ul\/li[position()>2]"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "首页推荐",
+          "authorXpath" : "dl\/dt\/span",
+          "coverXpath" : "div[1]\/a\/img\/@src",
+          "listXpath" : "\/\/*[@id=\"hotcontent\"]\/\/div[@class=\"item\"]",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "groupTitleXpath" : "h2",
+          "groupXpath" : "\/\/div[@class=\"content \" or @class=\"content border\"]",
+          "coverXpath" : "div[1]\/img\/@src",
+          "listXpath" : "div[@class=\"top\"]",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "nameXpath" : "a",
+          "listXpath" : "ul\/li",
+          "groupTitleXpath" : "h2",
+          "urlXpath" : "a\/@href",
+          "authorXpath" : "substring-after(text(), \"\/\")",
+          "groupXpath" : "\/\/div[@class=\"content \" or @class=\"content border\"]"
+        },
+        {
+          "groupTitleFixed" : "最近更新小说列表",
+          "authorXpath" : "span[4]",
+          "updatedAtXpath" : "span[5]",
+          "listXpath" : "\/\/div[@id=\"newscontent\"]\/div[@class=\"l\"]\/ul\/li",
+          "urlXpath" : "span[2]\/a\/@href",
+          "lastChapterXpath" : "span[3]\/a",
+          "nameXpath" : "span[2]\/a",
+          "categoryXpath" : "substring-before(substring-after(span[1]\/text(), \"[\"), \"]\")"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "chapterDetailRule" : {
+      "contentXpath" : "\/\/*[@id=\"content\"]"
+    },
+    "searchRule" : {
+      "method" : "GET",
+      "keyEncoding" : "UTF-8",
+      "url" : "http:\/\/www.ibiqu.org\/modules\/article\/search.php?searchkey=%s",
+      "bookListRule" : {
+        "nameXpath" : "td[1]\/a",
+        "listXpath" : "\/\/*[@id=\"hotcontent\"]\/table\/tr[position()>1]",
+        "updatedAtXpath" : "td[5]",
+        "lastChapterXpath" : "td[2]\/a",
+        "urlXpath" : "td[1]\/a\/@href",
+        "authorXpath" : "td[3]"
+      }
+    },
+    "name" : "笔趣阁",
+    "url" : "http:\/\/www.ibiqu.org\/"
+  }
+]

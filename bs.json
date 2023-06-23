@@ -1,0 +1,167 @@
+[
+  {
+    "bookDetailRule" : {
+      "introXpath" : "\/\/*[@id=\"intro\"]\/p[2]",
+      "authorXpath" : "substring-after(\/\/*[@id=\"info\"]\/p[1],  \"：\")",
+      "chapterListRule" : {
+        "nameXpath" : "\/a",
+        "urlXpath" : "\/a\/@href",
+        "listXpath" : "\/\/*[@id=\"list\"]\/dl\/dd"
+      },
+      "updatedAtXpath" : "substring-after(\/\/*[@id=\"info\"]\/p[3], \"：\")",
+      "coverXpath" : "\/\/*[@id=\"fmimg\"]\/img\/@src",
+      "lastChapterXpath" : "\/\/*[@id=\"info\"]\/p[4]\/a",
+      "nameXpath" : "\/\/*[@id=\"info\"]\/h1",
+      "categoryXpath" : "\/\/div[@class=\"con_top\"]\/a[2]"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "nameXpath" : "dl\/dt\/a ",
+          "listXpath" : "\/\/*[@id=\"hotcontent\"]\/div\/div[@class=\"item\"]",
+          "introXpath" : "dl\/dd",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "authorXpath" : "dl\/dt\/span",
+          "coverXpath" : "div[1]\/a\/img\/@src "
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/*[@class=\"nav\"]\/ul\/li[position()>2 and position()<9] "
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "首页推荐",
+          "authorXpath" : "dl\/dt\/span",
+          "coverXpath" : "div[1]\/a\/img\/@src",
+          "listXpath" : "\/\/*[@id=\"hotcontent\"]\/div[1]\/div[@class=\"item\"]",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "nameXpath" : "a",
+          "listXpath" : "ul\/li",
+          "groupTitleXpath" : "h2",
+          "urlXpath" : "a\/@href",
+          "authorXpath" : "substring-after(text(), \"\/\")",
+          "groupXpath" : " \/\/div[@class=\"content\" or @class=\"content border\"]"
+        },
+        {
+          "groupTitleXpath" : "h2",
+          "groupXpath" : " \/\/div[@class=\"content\" or @class=\"content border\"]",
+          "coverXpath" : "div[1]\/img\/@src",
+          "listXpath" : "div[@class=\"top\"]",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "\/dl\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "chapterDetailRule" : {
+      "contentXpath" : "\/\/*[@id=\"content\"]",
+      "purificationRegex" : "亲,点击进去.{0,150}无广告清新阅读！"
+    },
+    "searchRule" : {
+      "method" : "POST",
+      "keyEncoding" : "UTF-8",
+      "url" : "https:\/\/www.ibiquges.com\/modules\/article\/waps.php",
+      "params" : "searchkey=%s",
+      "bookListRule" : {
+        "nameXpath" : "\/td[1]\/a",
+        "listXpath" : "\/\/*[@id=\"checkform\"]\/table\/\/tr[position()>1]",
+        "lastChapterXpath" : "\/td[2]\/a",
+        "urlXpath" : "\/td[1]\/a\/@href",
+        "authorXpath" : "\/td[3] "
+      }
+    },
+    "name" : "香书小说",
+    "url" : "https:\/\/www.ibiquges.com\/"
+  },
+  {
+    "bookDetailRule" : {
+      "introXpath" : "\/\/*[@id=\"intro\"]\/p[2]",
+      "authorXpath" : "substring-after(\/\/*[@id=\"info\"]\/p[1],  \"：\")",
+      "chapterListRule" : {
+        "nameXpath" : "\/a",
+        "urlXpath" : "\/a\/@href",
+        "listXpath" : "\/\/*[@id=\"list\"]\/dl\/dd"
+      },
+      "updatedAtXpath" : "substring-after(\/\/*[@id=\"info\"]\/p[3], \"：\")",
+      "coverXpath" : "\/\/*[@id=\"fmimg\"]\/img\/@src",
+      "lastChapterXpath" : "\/\/*[@id=\"info\"]\/p[4]\/a",
+      "nameXpath" : "\/\/*[@id=\"info\"]\/h1",
+      "categoryXpath" : "\/\/div[@class=\"con_top\"]\/a[2]"
+    },
+    "discoverRule" : {
+      "navBookListRules" : [
+        {
+          "nameXpath" : "dl\/dt\/a ",
+          "listXpath" : "\/\/*[@id=\"hotcontent\"]\/div\/div[@class=\"item\"]",
+          "introXpath" : "dl\/dd",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "authorXpath" : "dl\/dt\/span",
+          "coverXpath" : "div[1]\/a\/img\/@src "
+        }
+      ],
+      "navListRule" : {
+        "nameXpath" : "a",
+        "urlXpath" : "a\/@href",
+        "listXpath" : "\/\/*[@class=\"nav\"]\/ul\/li[position()>2 and position()<10]"
+      },
+      "bookListRules" : [
+        {
+          "groupTitleFixed" : "首页推荐",
+          "authorXpath" : "dl\/dt\/span",
+          "coverXpath" : "div[1]\/a\/img\/@src",
+          "listXpath" : "\/\/*[@id=\"hotcontent\"]\/div[1]\/div[@class=\"item\"]",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "dl\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        },
+        {
+          "nameXpath" : "a",
+          "listXpath" : "ul\/li",
+          "groupTitleXpath" : "h2",
+          "urlXpath" : "a\/@href",
+          "authorXpath" : "substring-after(text(), \"\/\")",
+          "groupXpath" : " \/\/div[@class=\"content\" or @class=\"content border\"]"
+        },
+        {
+          "groupTitleXpath" : "h2",
+          "groupXpath" : " \/\/div[@class=\"content\" or @class=\"content border\"]",
+          "coverXpath" : "div[1]\/img\/@src",
+          "listXpath" : "div[@class=\"top\"]",
+          "urlXpath" : "dl\/dt\/a\/@href",
+          "introXpath" : "\/dl\/dd",
+          "nameXpath" : "dl\/dt\/a"
+        }
+      ]
+    },
+    "userAgent" : "Computer",
+    "chapterDetailRule" : {
+      "contentXpath" : "\/\/*[@id=\"content\"]",
+      "purificationRegex" : "网页版章节内容慢，请下载[\\s,\\S]{0,150}"
+    },
+    "searchRule" : {
+      "method" : "GET",
+      "keyEncoding" : "UTF-8",
+      "url" : "https:\/\/www.biqupai.com\/search.php?keyword=%s",
+      "bookListRule" : {
+        "updatedAtXpath" : "\/div[2]\/div\/p[3]\/span[2]",
+        "lastChapterXpath" : "\/div[2]\/div\/p[4]\/a",
+        "authorXpath" : "\/div[2]\/div\/p[1]\/span[2]",
+        "coverXpath" : "\/div[1]\/a\/img\/@src",
+        "listXpath" : "\/\/div[@class=\"result-item result-game-item\"]",
+        "urlXpath" : "\/div[2]\/h3\/a\/@href",
+        "introXpath" : "\/div[2]\/p",
+        "nameXpath" : "\/div[2]\/h3\/a",
+        "categoryXpath" : "\/div[2]\/div\/p[2]\/span[2]"
+      }
+    },
+    "name" : "笔趣派",
+    "url" : "https:\/\/www.biqupai.com\/"
+  }
+]
